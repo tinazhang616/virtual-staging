@@ -1,0 +1,23 @@
+.navbar-brand {
+    letter-spacing: 5px;
+}
+h1 {
+    font-size: 5rem!important;
+}
+h2 {
+    font-size: 3rem!important;
+}
+body {
+    margin:0;
+    padding: 0;
+}
+footer {
+    clear:both;
+    background: rgb(69, 70, 130);
+
+  }
+
+.card {
+    background-color: rgb(230, 243, 255)!important;
+    border:0px
+}
