@@ -1,10 +1,12 @@
 import React from "react";
 import PriceDetail from "./PriceDetail";
-export default function Checkout({ shoppingCart }) {
-  console.log("this is shoppingcart", shoppingCart);
+import { useSelector } from "react-redux";
+export default function Checkout() {
+  const state = useSelector((state) => state.todos);
+  console.log("items in cart => ", state);
   return (
     <div>
-      <table class="table">
+      <table className="table">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -15,9 +17,7 @@ export default function Checkout({ shoppingCart }) {
             <th scope="col">Total</th>
           </tr>
         </thead>
-        <tbody>
-          <PriceDetail />
-        </tbody>
+        <tbody></tbody>
       </table>
     </div>
   );

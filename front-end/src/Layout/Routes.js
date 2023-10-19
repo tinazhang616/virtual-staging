@@ -55,11 +55,11 @@ function Routes() {
       <Route exact path="/account">
         <Account />
       </Route>
-      <Route path="/contact-us">
+      <Route exact path="/contact-us">
         <ContactUs />
       </Route>
       <Route path="/cart">
-        <Checkout shoppingCart={shoppingCart}/>
+        <Checkout shoppingCart={shoppingCart} />
       </Route>
       <Route>
         <NotFound />

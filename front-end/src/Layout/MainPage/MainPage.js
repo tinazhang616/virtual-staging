@@ -32,7 +32,7 @@ function MainPage() {
         data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero.png"
         data-ll-status="loaded"
         sizes="(max-width: 1122px) 100vw, 1122px"
-        srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero.png 1122w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-300x117.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-1024x401.png 1024w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-768x300.png 768w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-416x163.png 416w"
+        srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero.png 1122w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-300x117.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-1024x401.png 1024w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-768x300.png 768w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-hero-416x163.png 416w"
       ></img>
       {/* secrion 2 */}
       <div className="row my-5 pt-5">
@@ -48,14 +48,14 @@ function MainPage() {
             width="741"
             height="267"
             src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos.png"
-            class="attachment-large size-large wp-image-1305911 entered lazyloaded"
+            className="attachment-large size-large wp-image-1305911 entered lazyloaded"
             alt="real estate company logos that have used virtual staging solutions including coldwell banker, fannie mae, sothebys, remax, and more"
             data-lazy-srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos.png 741w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos-300x108.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos-416x150.png 416w"
             data-lazy-sizes="(max-width: 741px) 100vw, 741px"
             data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos.png"
             data-ll-status="loaded"
             sizes="(max-width: 741px) 100vw, 741px"
-            srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos.png 741w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos-300x108.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos-416x150.png 416w"
+            srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos.png 741w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos-300x108.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/company_logos-416x150.png 416w"
           />
         </div>
       </div>
@@ -118,14 +118,14 @@ function MainPage() {
             width="500"
             height="500"
             src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png"
-            class="attachment-full size-full wp-image-1305913 entered lazyloaded"
+            className="attachment-full size-full wp-image-1305913 entered lazyloaded"
             alt="modern living room with fireplace before and after virtual staging"
             data-lazy-srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-100x100.png 100w"
             data-lazy-sizes="(max-width: 500px) 100vw, 500px"
             data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png"
             data-ll-status="loaded"
             sizes="(max-width: 500px) 100vw, 500px"
-            srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-100x100.png 100w"
+            srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging-100x100.png 100w"
           />
         </div>
         <div className="col-md-5 text-start my-auto">
@@ -163,14 +163,14 @@ function MainPage() {
             width="500"
             height="500"
             src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1.png"
-            class="attachment-full size-full wp-image-1305914 entered lazyloaded"
+            className="attachment-full size-full wp-image-1305914 entered lazyloaded"
             alt="transitional living room furniture removed and virtually staged"
             data-lazy-srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-100x100.png 100w"
             data-lazy-sizes="(max-width: 500px) 100vw, 500px"
             data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1.png"
             data-ll-status="loaded"
             sizes="(max-width: 500px) 100vw, 500px"
-            srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-100x100.png 100w"
+            srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/restyle-1-100x100.png 100w"
           />
         </div>
       </div>
@@ -182,14 +182,14 @@ function MainPage() {
             width="500"
             height="500"
             src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png"
-            class="attachment-full size-full wp-image-1305915 entered lazyloaded"
+            className="attachment-full size-full wp-image-1305915 entered lazyloaded"
             alt="kitchen remodeled and virtually staged"
             data-lazy-srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-100x100.png 100w"
             data-lazy-sizes="(max-width: 500px) 100vw, 500px"
             data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png"
             data-ll-status="loaded"
             sizes="(max-width: 500px) 100vw, 500px"
-            srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-100x100.png 100w"
+            srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2-100x100.png 100w"
           />
         </div>
         <div className="col-md-5 text-start my-auto">
@@ -226,14 +226,14 @@ function MainPage() {
             width="500"
             height="500"
             src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png"
-            class="attachment-full size-full wp-image-1305916 entered lazyloaded"
+            className="attachment-full size-full wp-image-1305916 entered lazyloaded"
             alt="floor plan turned into photo of a living room"
             data-lazy-srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-100x100.png 100w"
             data-lazy-sizes="(max-width: 500px) 100vw, 500px"
             data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png"
             data-ll-status="loaded"
             sizes="(max-width: 500px) 100vw, 500px"
-            srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-100x100.png 100w"
+            srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-100x100.png 100w"
           />
         </div>
       </div>
@@ -265,7 +265,7 @@ function MainPage() {
       </div>
       {/* section 9 explore all services */}
       <div>
-        <div class="elementor-image">
+        <div className="elementor-image">
           <img
             decoding="async"
             width="808"
@@ -278,7 +278,7 @@ function MainPage() {
             data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1.png"
             data-ll-status="loaded"
             sizes="(max-width: 808px) 100vw, 808px"
-            srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1.png 808w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-300x289.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-768x739.png 768w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-416x401.png 416w"
+            srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1.png 808w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-300x289.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-768x739.png 768w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-416x401.png 416w"
           />
           <noscript>
             <img
@@ -286,9 +286,9 @@ function MainPage() {
               width="808"
               height="778"
               src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1.png"
-              class="attachment-full size-full wp-image-1305920"
+              className="attachment-full size-full wp-image-1305920"
               alt="modern bedroom before and after virtual staging"
-              srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1.png 808w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-300x289.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-768x739.png 768w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-416x401.png 416w"
+              srcSet="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1.png 808w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-300x289.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-768x739.png 768w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/ctaimage-virtualstaging-1-416x401.png 416w"
               sizes="(max-width: 808px) 100vw, 808px"
             />
           </noscript>

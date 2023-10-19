@@ -21,3 +21,14 @@ footer {
     background-color: rgb(230, 243, 255)!important;
     border:0px
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #service {
+    background-color: rgba(144, 149, 187, 0.76);
+  }
+.price{
+    background-color: white!important;
+}

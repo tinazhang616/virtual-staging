@@ -1,6 +1,6 @@
 import React from "react";
 import VSPricingCard from "./VSPricingCard";
-export default function BasicButton({ shoppingCart }) {
+export default function PlusButton({ shoppingCart }) {
   return (
     <div>
       <button
@@ -9,21 +9,21 @@ export default function BasicButton({ shoppingCart }) {
         data-bs-toggle="modal"
         data-bs-target="#VSModal"
       >
-        Basic Service
+        Plus Service
       </button>
 
       <div
         className="modal fade"
         id="VSModal"
         tabIndex="-1"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="VSModalLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog modal-xl modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
               <div>
-                <h1 className="modal-title fs-2" id="exampleModalLabel">
+                <h1 className="modal-title fs-2" id="VSModalLabel">
                   How many photos?
                 </h1>
                 <p className="d-block">
@@ -39,10 +39,26 @@ export default function BasicButton({ shoppingCart }) {
               ></button>
             </div>
             <div className="modal-body d-flex justify-content-around">
-              <VSPricingCard price="300" quantity="4" />
-              <VSPricingCard price="375" quantity="5" />
-              <VSPricingCard price="450" quantity="6" />
-              <VSPricingCard price="525" quantity="7" />
+              <VSPricingCard
+                price="300"
+                quantity="4"
+                shoppingCart={shoppingCart}
+              />
+              <VSPricingCard
+                price="375"
+                quantity="5"
+                shoppingCart={shoppingCart}
+              />
+              <VSPricingCard
+                price="450"
+                quantity="6"
+                shoppingCart={shoppingCart}
+              />
+              <VSPricingCard
+                price="525"
+                quantity="7"
+                shoppingCart={shoppingCart}
+              />
               <VSPricingCard />
             </div>
           </div>

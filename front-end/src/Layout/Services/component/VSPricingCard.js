@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useSelector, useDispatch } from "react-redux";
+import { todoAdded } from "../../../redux/reducers/todosSlice";
 
-export default function VSPricingCard({ price, quantity, shoppingCart }) {
+export default function VSPricingCard({ price, quantity }) {
+  const dispatch = useDispatch();
+  const itemDetail = {
+    service: "Virtual Staging",
+    price: +price,
+    quantity: +quantity,
+  };
   const history = useHistory();
   let card = (
     <div>
@@ -9,10 +17,10 @@ export default function VSPricingCard({ price, quantity, shoppingCart }) {
       <p className="card-text fs-2 text-primary-emphasis">${price}</p>
     </div>
   );
-  const itemDetail = { virtual_staging: [price, quantity] };
+
   const handleClick = (e) => {
     e.preventDefault();
-    shoppingCart.push(itemDetail);
+    dispatch(todoAdded(itemDetail));
     history.push("/cart");
   };
   return (

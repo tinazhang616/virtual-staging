@@ -1,10 +1,11 @@
 import React from "react";
-import logo from "../image/logo-test.jpg";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { useSelector } from "react-redux";
 function Menu() {
+  const state = useSelector((state) => state.todos);
+  console.log("this is items in cart", state, "this is length", state.length);
   return (
     <div className="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
       <div className="container-fluid ">
@@ -12,7 +13,7 @@ function Menu() {
           VIRTUAL STAGING
         </NavLink>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -20,7 +21,7 @@ function Menu() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-medium fs-5">
@@ -105,7 +106,7 @@ function Menu() {
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/account">
+              <NavLink className="nav-link" to="/contact-us">
                 Contact Us
               </NavLink>
             </li>
@@ -116,7 +117,8 @@ function Menu() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/cart">
-                <span className="fa fa-shopping-cart"></span>Cart (0)
+                <span className="fa fa-shopping-cart"></span>Cart (
+                {state.length})
               </NavLink>
             </li>
           </ul>
