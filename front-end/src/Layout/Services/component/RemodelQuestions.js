@@ -1,7 +1,4 @@
-import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
-
 export default function RemodelQuestions() {
-  const history = useHistory();
   return (
     <div className="accordion" id="accordionExample">
       <div className="accordion-item">

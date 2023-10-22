@@ -1,7 +1,5 @@
 import React from "react";
 import ServiceAddtoCartButton from "./component/ServiceAddtoCartButton";
-import RemodelPhotos from "./component/RemodelPhotos";
-import RemodelQuestions from "./component/RemodelQuestions";
 
 export default function FloorPlan() {
   return (

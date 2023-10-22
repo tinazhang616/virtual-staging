@@ -182,6 +182,7 @@ export default function RemodelPhotos() {
                       <img
                         className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/IMG_6554.jpg"
+                        alt="5 slide"
                       />
                     </div>
                     <div className="carousel-item">

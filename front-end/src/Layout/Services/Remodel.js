@@ -1,11 +1,9 @@
 import React from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import ServiceAddtoCartButton from "./component/ServiceAddtoCartButton";
 import RemodelPhotos from "./component/RemodelPhotos";
 import RemodelQuestions from "./component/RemodelQuestions";
 
 export default function Remodel() {
-  const history = useHistory();
   return (
     <div className="my-5 py-5">
       <section className="row col-md-8 mx-auto">
