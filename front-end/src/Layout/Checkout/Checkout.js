@@ -1,6 +1,7 @@
 import React from "react";
 import PriceDetail from "./PriceDetail";
 import { useSelector } from "react-redux";
+import MakePayment from "./MakePayment";
 export default function Checkout() {
   const state = useSelector((state) => state.todos);
   console.log("items in cart => ", state);
@@ -19,6 +20,7 @@ export default function Checkout() {
         </thead>
         <tbody></tbody>
       </table>
+      <MakePayment />
     </div>
   );
 }

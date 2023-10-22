@@ -5,8 +5,9 @@ import {
 } from "react-compare-slider";
 import BasicService from "./component/BasicService";
 import PlusService from "./component/PlusService";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 function VirtualStaging() {
+  const history = useHistory();
   return (
     <div className="my-5 py-5">
       <section className="row col-md-8 mx-auto">
@@ -67,11 +68,8 @@ function VirtualStaging() {
           </h5>
         </div>
         <div className="d-md-flex justify-content-between flex-wrap">
-          <div className="col-md-3 text-center">
-            <div
-              className="card bg-primary"
-              style={{ height: "18rem", width: "23rem" }}
-            >
+          <div className="col-md-4 text-center">
+            <div className="card">
               <div className="card-body">
                 <span className="fa fa-clock-o fa-4x text-primary m-3"></span>
                 <h3 className="card-title">Fast Turnaround</h3>
@@ -82,8 +80,8 @@ function VirtualStaging() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 text-center">
-            <div className="card" style={{ height: "18rem", width: "23rem" }}>
+          <div className="col-md-4 text-center">
+            <div className="card">
               <div className="card-body">
                 <span className="fa fa-smile-o fa-4x text-primary m-3"></span>
                 <h3 className="card-title">Happiness Guaranteed</h3>
@@ -94,8 +92,8 @@ function VirtualStaging() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 text-center">
-            <div className="card" style={{ height: "18rem", width: "23rem" }}>
+          <div className="col-md-4 text-center">
+            <div className="card">
               <div className="card-body">
                 <span className="fa fa-refresh fa-4x text-primary m-3"></span>
                 <h3 className="card-title">Free Revisions</h3>
@@ -108,8 +106,8 @@ function VirtualStaging() {
           </div>
         </div>
         <div className="d-md-flex justify-content-between flex-wrap my-5">
-          <div className="col-md-3 text-left">
-            <div style={{ height: "18rem", width: "23rem" }}>
+          <div className="col-md-4 text-left">
+            <div>
               <div className="card-body">
                 <span className="fa fa-twitter fa-2x text-primary m-3"></span>
                 <h4 className="card-title my-2">Bring a vision to life</h4>
@@ -121,8 +119,8 @@ function VirtualStaging() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 text-left">
-            <div style={{ height: "18rem", width: "23rem" }}>
+          <div className="col-md-4 text-left">
+            <div>
               <div className="card-body">
                 <span className="fa fa-line-chart fa-2x text-primary m-3"></span>
                 <h4 className="card-title my-2">
@@ -137,8 +135,8 @@ function VirtualStaging() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 text-left">
-            <div style={{ height: "18rem", width: "23rem" }}>
+          <div className="col-md-4 text-left">
+            <div>
               <div className="card-body">
                 <span className="fa fa-level-down fa-2x text-primary m-3"></span>
                 <h4 className="card-title my-2">Decrease time on the market</h4>
@@ -152,9 +150,9 @@ function VirtualStaging() {
             </div>
           </div>
         </div>
-        <div className="d-md-flex justify-content-between flex-wrap my-5">
-          <div className="col-md-3 text-left">
-            <div style={{ height: "18rem", width: "23rem" }}>
+        <div className="d-md-flex justify-content-between flex-wrap mb-5">
+          <div className="col-md-4 text-left">
+            <div>
               <div className="card-body">
                 <span className="fa fa-arrows fa-2x text-primary m-3"></span>
                 <h4 className="card-title my-2">Make a space feel bigger</h4>
@@ -167,8 +165,8 @@ function VirtualStaging() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 text-left">
-            <div style={{ height: "18rem", width: "23rem" }}>
+          <div className="col-md-4 text-left">
+            <div>
               <div className="card-body">
                 <span className="fa fa-money fa-2x text-primary m-3"></span>
                 <h4 className="card-title my-2">
@@ -183,8 +181,8 @@ function VirtualStaging() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 text-left">
-            <div style={{ height: "18rem", width: "23rem" }}>
+          <div className="col-md-4 text-left">
+            <div>
               <div className="card-body">
                 <span className="fa fa-star fa-2x text-primary m-3"></span>
                 <h4 className="card-title my-2">Win listing contracts</h4>
@@ -199,7 +197,7 @@ function VirtualStaging() {
           </div>
         </div>
       </section>
-      <section className="row col-md-8 mx-auto my-5 py-5">
+      <section className="row col-md-8 mx-auto mb-5 py-5">
         <h2 className="m-auto my-5 text-center">
           Get more with Virtual Staging Solutions
         </h2>
@@ -391,9 +389,87 @@ function VirtualStaging() {
         <h2 className="col-md-10 m-auto">
           Need more than just virtual staging? Check out our other services.
         </h2>
+        <div className="my-5 d-md-flex justify-content-around">
+          <div
+            className="col-md-3"
+            role="button"
+            onClick={() => history.push("/services/restyle")}
+          >
+            <img
+              src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/restyle-1.png"
+              className="card-img-top"
+              alt="restyle"
+            />
+            <div className="card-body text-left ms-3 my-3">
+              <h4 className="card-title">Restyle</h4>
+              <h4 className="card-title">Remove furniture &gt;</h4>
+            </div>
+          </div>
+          <div
+            className="col-md-3"
+            role="button"
+            onClick={() => history.push("/services/remodel")}
+          >
+            <img
+              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png"
+              className="card-img-top"
+              alt="remodel"
+            />
+            <div className="card-body text-left ms-3 my-3">
+              <h4 className="card-title">Remodel</h4>
+              <h4 className="card-title">Structural edits &gt;</h4>
+            </div>
+          </div>
+          <div
+            className="col-md-3"
+            role="button"
+            onClick={() => history.push("/services/envision")}
+          >
+            <img
+              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png"
+              className="card-img-top"
+              alt="envision"
+            />
+            <div className="card-body text-left ms-3 my-3">
+              <h4 className="card-title">Envision</h4>
+              <h4 className="card-title">Virtual construction &gt;</h4>
+            </div>
+          </div>
+          <div
+            className="col-md-3"
+            role="button"
+            onClick={() => history.push("/services/3d-floor-plan")}
+          >
+            <img
+              src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/3Dfloorplan-1024x1024.jpg"
+              className="card-img-top"
+              alt="3d floor plan"
+            />
+            <div className="card-body text-left ms-3 my-3">
+              <h4 className="card-title">3D Floor Plan &gt;</h4>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Why choose Virtual Staging Solutions</h2>
+      <section className="py-5" id="service">
+        <div
+          div
+          className="row col-md-8 mx-auto text-center d-flex justify-content-around my-5"
+        >
+          <h2 className="mb-5">Why choose Virtual Staging Solutions</h2>
+          <div className="col-md-4">
+            <span className="fa fa-diamond fa-3x text-primary m-3"></span>
+            <h3>Personalized team</h3>
+          </div>
+          <div className="col-md-4">
+            <span className="fa fa-handshake-o fa-3x text-primary m-3"></span>
+            <h3>Money back guarantee</h3>
+          </div>
+          <div className="col-md-4">
+            <span className="fa fa-refresh fa-3x text-primary m-3"></span>
+            <h3>Free revisions</h3>
+          </div>
+        </div>
       </section>
     </div>
   );

@@ -25,17 +25,17 @@ function Routes() {
       <Route exact path="/services">
         <Services />
       </Route>
-      <Route path="/services/virtual-staging">
+      <Route exact path="/services/virtual-staging">
         <VirtualStaging shoppingCart={shoppingCart} />
       </Route>
-      <Route path="/services/restyle">
+      <Route exact path="/services/restyle">
         <Restyle />
       </Route>
-      <Route path="/services/remodel">
+      <Route exact path="/services/remodel">
         <Remodel shoppingCart={shoppingCart} />
       </Route>
-      <Route exact path="/services/envison">
-        <Envision shoppingCart={shoppingCart} />
+      <Route exact path="/services/envision">
+        <Envision />
       </Route>
       <Route exact path="/services/3d-floor-plan">
         <FloorPlan shoppingCart={shoppingCart} />

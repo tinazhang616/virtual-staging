@@ -227,7 +227,7 @@ function MainPage() {
             height="500"
             src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png"
             className="attachment-full size-full wp-image-1305916 entered lazyloaded"
-            alt="floor plan turned into photo of a living room"
+            alt="floor plan turned into a rendering of a living room"
             data-lazy-srcset="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png 500w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-300x300.png 300w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-150x150.png 150w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-324x324.png 324w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-416x416.png 416w, https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision-100x100.png 100w"
             data-lazy-sizes="(max-width: 500px) 100vw, 500px"
             data-lazy-src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png"

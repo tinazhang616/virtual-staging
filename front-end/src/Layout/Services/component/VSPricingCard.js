@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { todoAdded } from "../../../redux/reducers/todosSlice";
 
 export default function VSPricingCard({ price, quantity }) {
