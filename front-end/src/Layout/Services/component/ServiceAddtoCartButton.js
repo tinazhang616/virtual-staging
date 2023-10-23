@@ -6,23 +6,22 @@ import { todoAdded } from "../../../redux/reducers/todosSlice";
 export default function ServiceAddtoCartButton({ service, price }) {
   const dispatch = useDispatch();
   const history = useHistory();
-  const intialRestyle = {
+  const intialDetail = {
     service,
     price,
     quantity: 1,
   };
-  const [restyle, setRestyle] = useState({ ...intialRestyle });
+  const [serviceDetail, setServiceDetail] = useState({ ...intialDetail });
   const onChange = (e) => {
-    setRestyle({
-      ...restyle,
+    setServiceDetail({
+      ...serviceDetail,
       [e.target.name]: e.target.value,
     });
   };
   const handleAddtoCart = (e) => {
     e.preventDefault();
-    dispatch(todoAdded(restyle));
+    dispatch(todoAdded(serviceDetail));
     history.push("/cart");
-    console.log("this is restyle detail", restyle);
   };
   return (
     <div className="flex-row d-flex mb-3">
@@ -33,7 +32,7 @@ export default function ServiceAddtoCartButton({ service, price }) {
           className="form-control input-restyle"
           placeholder="1"
           onChange={onChange}
-          value={restyle.quantity}
+          value={serviceDetail.quantity}
         />
       </div>
       <button

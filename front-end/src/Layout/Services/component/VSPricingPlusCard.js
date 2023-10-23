@@ -3,11 +3,11 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch } from "react-redux";
 import { todoAdded } from "../../../redux/reducers/todosSlice";
 
-export default function VSPricingCard({ quantity }) {
+export default function VSPricingPlusCard({ quantity }) {
   const dispatch = useDispatch();
   const itemDetail = {
-    service: "Virtual Staging",
-    price: 75,
+    service: "Virtual Staging - Plus",
+    price: 99,
     quantity,
   };
   const history = useHistory();

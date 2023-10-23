@@ -23,17 +23,14 @@ const todosSlice = createSlice({
   initialState: [],
   reducers: {
     todoDel(state, action) {
+      console.log("this is delete action", action);
       return (state = state.filter((x) => {
-        return x.id !== action.payload.id;
+        return x.service !== action.payload;
       }));
     },
     todoAdded(state, action) {
       state.push(action.payload);
     },
-    // todoToggled(state, action) {
-    //   const todo = state.find((todo) => todo.id === action.payload);
-    //   todo.completed = !todo.completed;
-    // },
   },
 });
 

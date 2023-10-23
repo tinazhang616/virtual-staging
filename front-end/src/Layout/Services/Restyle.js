@@ -23,7 +23,7 @@ function Restyle() {
             <h2>$99</h2>
             <p className="fs-4">Per Photo</p>
           </div>
-          <ServiceAddtoCartButton service="restyle" price="99" />
+          <ServiceAddtoCartButton service="Restyle" price="99" />
         </div>
         <div className="col-md text-center">
           <img
@@ -154,7 +154,7 @@ function Restyle() {
           </p>
 
           <div className="row-col-8 d-flex justify-content-center">
-            <ServiceAddtoCartButton service="restyle" price="99" />
+            <ServiceAddtoCartButton service="Restyle" price="99" />
           </div>
         </div>
       </section>

@@ -39,10 +39,10 @@ export default function BasicButton({ shoppingCart }) {
               ></button>
             </div>
             <div className="modal-body d-flex justify-content-around">
-              <VSPricingCard price="300" quantity="4" />
-              <VSPricingCard price="375" quantity="5" />
-              <VSPricingCard price="450" quantity="6" />
-              <VSPricingCard price="525" quantity="7" />
+              <VSPricingCard quantity="4" />
+              <VSPricingCard quantity="5" />
+              <VSPricingCard quantity="6" />
+              <VSPricingCard quantity="7" />
               <VSPricingCard />
             </div>
           </div>

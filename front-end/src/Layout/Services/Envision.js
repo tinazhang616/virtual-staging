@@ -24,7 +24,7 @@ export default function Envision() {
             <h2>$399</h2>
             <p className="fs-4">Per Photo</p>
           </div>
-          <ServiceAddtoCartButton service="envision" price="399" />
+          <ServiceAddtoCartButton service="Envision" price="399" />
         </div>
         <div className="col-md text-center">
           <img
@@ -159,7 +159,7 @@ export default function Envision() {
           </p>
 
           <div className="row-col-8 d-flex justify-content-center">
-            <ServiceAddtoCartButton service="envision" price="399" />
+            <ServiceAddtoCartButton service="Envision" price="399" />
           </div>
         </div>
       </section>

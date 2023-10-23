@@ -16,7 +16,6 @@ import Remodel from "./Services/Remodel";
 import Checkout from "./Checkout/Checkout";
 
 function Routes() {
-  const shoppingCart = [];
   return (
     <Switch>
       <Route exact={true} path="/">
@@ -26,22 +25,22 @@ function Routes() {
         <Services />
       </Route>
       <Route exact path="/services/virtual-staging">
-        <VirtualStaging shoppingCart={shoppingCart} />
+        <VirtualStaging />
       </Route>
       <Route exact path="/services/restyle">
         <Restyle />
       </Route>
       <Route exact path="/services/remodel">
-        <Remodel shoppingCart={shoppingCart} />
+        <Remodel />
       </Route>
       <Route exact path="/services/envision">
         <Envision />
       </Route>
       <Route exact path="/services/3d-floor-plan">
-        <FloorPlan shoppingCart={shoppingCart} />
+        <FloorPlan />
       </Route>
       <Route path="/furniture">
-        <Furniture shoppingCart={shoppingCart} />
+        <Furniture />
       </Route>
       <Route exact path="/about">
         <AboutUs />
@@ -59,7 +58,7 @@ function Routes() {
         <ContactUs />
       </Route>
       <Route path="/cart">
-        <Checkout shoppingCart={shoppingCart} />
+        <Checkout />
       </Route>
       <Route>
         <NotFound />

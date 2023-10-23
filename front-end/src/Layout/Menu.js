@@ -7,7 +7,7 @@ function Menu() {
   const state = useSelector((state) => state.todos);
   console.log("this is items in cart", state, "this is length", state.length);
   return (
-    <div className="nav justify-content-between navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div className="nav shadow-sm justify-content-between bg-white navbar navbar-expand-lg fixed-top">
       <div className="container-fluid mx-3">
         <NavLink className="navbar-brand fw-bold" to="/">
           VIRTUAL STAGING

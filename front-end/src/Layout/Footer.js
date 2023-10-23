@@ -21,7 +21,7 @@ function Footer() {
                 <a
                   href="https://github.com/twbs/bootstrap/blob/main/LICENSE"
                   target="_blank"
-                  rel="license noopener"
+                  rel="license noopener noreferrer"
                 >
                   MIT
                 </a>
@@ -29,7 +29,7 @@ function Footer() {
                 <a
                   href="https://creativecommons.org/licenses/by/3.0/"
                   target="_blank"
-                  rel="license noopener"
+                  rel="license noopener noreferrer"
                 >
                   CC BY 3.0
                 </a>

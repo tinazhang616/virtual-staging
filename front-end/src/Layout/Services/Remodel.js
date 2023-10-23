@@ -24,7 +24,7 @@ export default function Remodel() {
             <h2>$125</h2>
             <p className="fs-4">Per Photo</p>
           </div>
-          <ServiceAddtoCartButton service="remodel" price="125" />
+          <ServiceAddtoCartButton service="Remodel" price="125" />
         </div>
         <div className="col-md text-center">
           <img
@@ -159,7 +159,7 @@ export default function Remodel() {
           </p>
 
           <div className="row-col-8 d-flex justify-content-center">
-            <ServiceAddtoCartButton service="remodel" price="125" />
+            <ServiceAddtoCartButton service="Remodel" price="125" />
           </div>
         </div>
       </section>

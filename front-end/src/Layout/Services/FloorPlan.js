@@ -20,7 +20,7 @@ export default function FloorPlan() {
             <h2>$99</h2>
             <p className="fs-4">Per Level</p>
           </div>
-          <ServiceAddtoCartButton service="3D floor plan" price="99" />
+          <ServiceAddtoCartButton service="3D Floor Plan" price="99" />
         </div>
         <div className="col-md text-center">
           <img
@@ -145,7 +145,7 @@ export default function FloorPlan() {
           </p>
 
           <div className="row-col-8 d-flex justify-content-center">
-            <ServiceAddtoCartButton service="3D floor plan" price="99" />
+            <ServiceAddtoCartButton service="3D Floor Plan" price="99" />
           </div>
         </div>
       </section>

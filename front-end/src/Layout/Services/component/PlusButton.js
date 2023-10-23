@@ -1,29 +1,29 @@
 import React from "react";
-import VSPricingCard from "./VSPricingCard";
-export default function PlusButton({ shoppingCart }) {
+import VSPricingPlusCard from "./VSPricingPlusCard";
+export default function PlusButton() {
   return (
     <div>
       <button
         type="button"
         className="btn btn-primary"
         data-bs-toggle="modal"
-        data-bs-target="#VSModal"
+        data-bs-target="#VSModalPlus"
       >
         Plus Service
       </button>
 
       <div
         className="modal fade"
-        id="VSModal"
+        id="VSModalPlus"
         tabIndex="-1"
-        aria-labelledby="VSModalLabel"
+        aria-labelledby="VSModalPlusLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog modal-xl modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
               <div>
-                <h1 className="modal-title fs-2" id="VSModalLabel">
+                <h1 className="modal-title fs-2" id="VSModalPlusLabel">
                   How many photos?
                 </h1>
                 <p className="d-block">
@@ -39,27 +39,11 @@ export default function PlusButton({ shoppingCart }) {
               ></button>
             </div>
             <div className="modal-body d-flex justify-content-around">
-              <VSPricingCard
-                price="300"
-                quantity="4"
-                shoppingCart={shoppingCart}
-              />
-              <VSPricingCard
-                price="375"
-                quantity="5"
-                shoppingCart={shoppingCart}
-              />
-              <VSPricingCard
-                price="450"
-                quantity="6"
-                shoppingCart={shoppingCart}
-              />
-              <VSPricingCard
-                price="525"
-                quantity="7"
-                shoppingCart={shoppingCart}
-              />
-              <VSPricingCard />
+              <VSPricingPlusCard quantity="4" />
+              <VSPricingPlusCard quantity="5" />
+              <VSPricingPlusCard quantity="6" />
+              <VSPricingPlusCard quantity="7" />
+              <VSPricingPlusCard />
             </div>
           </div>
         </div>
