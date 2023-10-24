@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import MakePayment from "./MakePayment";
 import CartDetails from "./component/CartDetails";
 import ReferralCode from "./component/ReferralCode";
 import UpdateCart from "./component/UpdateCart";
@@ -26,8 +25,6 @@ export default function Checkout() {
           <CartTotals />
         </section>
       </div>
-
-      <MakePayment />
     </div>
   );
 }

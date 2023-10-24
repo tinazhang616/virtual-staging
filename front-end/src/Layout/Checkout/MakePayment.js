@@ -1,6 +1,6 @@
 export default function MakePayment() {
   return (
-    <div>
+    <div className="row col-md-8 mx-auto">
       <div class="row g-5">
         <div class="col-md-5 col-lg-4 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3">

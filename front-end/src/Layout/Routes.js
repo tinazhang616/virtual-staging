@@ -14,6 +14,7 @@ import Envision from "./Services/Envision";
 import FloorPlan from "./Services/FloorPlan";
 import Remodel from "./Services/Remodel";
 import Checkout from "./Checkout/Checkout";
+import MakePayment from "./Checkout/MakePayment";
 
 function Routes() {
   return (
@@ -59,6 +60,9 @@ function Routes() {
       </Route>
       <Route path="/cart">
         <Checkout />
+      </Route>
+      <Route path="/checkout">
+        <MakePayment />
       </Route>
       <Route>
         <NotFound />

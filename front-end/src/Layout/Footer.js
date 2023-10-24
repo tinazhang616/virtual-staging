@@ -3,8 +3,8 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function Footer() {
   return (
     <>
-      <footer>
-        <div className="row d-flex justify-content-around py-4 py-md-5 text-light">
+      <footer className="row py-4 py-md-5 text-light">
+        <div className="d-flex col-md-8 mx-auto justify-content-around">
           <div className="col-4 mb-3">
             <h5>Contact</h5>
             <ul className="list-unstyled small">
@@ -68,8 +68,8 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <br />
-        <div className="row text-center">Virtual Staging</div>
+        <hr />
+        <div className="mx-auto text-center">© Virtual Staging Solution</div>
       </footer>
     </>
   );
