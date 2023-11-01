@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import CartDetails from "./component/CartDetails";
-import ReferralCode from "./component/ReferralCode";
-import UpdateCart from "./component/UpdateCart";
 import SuperCharge from "./component/SuperCharge";
 import CartTotals from "./component/CartTotals";
 export default function Checkout() {
@@ -14,10 +12,6 @@ export default function Checkout() {
           <h3>Your order summary</h3>
           <div className="my-5">
             <CartDetails />
-          </div>
-          <div className="d-flex justify-content-between">
-            <ReferralCode />
-            <UpdateCart />
           </div>
         </section>
         <section className="col-md-8 mx-auto d-flex justify-content-between my-5">

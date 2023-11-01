@@ -5,7 +5,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useSelector } from "react-redux";
 function Menu() {
   const state = useSelector((state) => state.todos);
-  console.log("this is items in cart", state, "this is length", state.length);
+  console.log(
+    "this is items in cart",
+    state,
+    "this is length",
+    state.service.length
+  );
   return (
     <div className="nav shadow-sm justify-content-between bg-white navbar navbar-expand-lg fixed-top">
       <div className="container-fluid mx-3">
@@ -122,7 +127,7 @@ function Menu() {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/cart">
                   <span className="fa fa-shopping-cart"></span>Cart (
-                  {state.length})
+                  {state.service.length})
                 </NavLink>
               </li>
             </ul>

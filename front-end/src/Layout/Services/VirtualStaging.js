@@ -369,7 +369,7 @@ function VirtualStaging() {
                 <p className="card-text fs-2">Save 15%</p>
               </div>
             </div>
-            <div class="card price col-md-3 my-2">
+            <div className="card price col-md-3 my-2">
               <div className="card-body">
                 <h5 className="card-title fs-1">25+ Photos</h5>
                 <p className="card-text fs-2">Save 20%</p>

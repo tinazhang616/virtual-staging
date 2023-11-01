@@ -1,6 +1,6 @@
-export default function UpdateCart() {
+export default function UpdateCart({ handleUpdate }) {
   return (
-    <button type="button" className="btn btn-secondary">
+    <button type="button" className="btn btn-secondary" onClick={handleUpdate}>
       Update Cart
     </button>
   );

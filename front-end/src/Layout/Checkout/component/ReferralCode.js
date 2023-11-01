@@ -1,8 +1,10 @@
 import { useState } from "react";
 
-export default function ReferralCode() {
-  const [referralCode, setReferralCode] = useState("");
-  const onChange = (e) => {};
+export default function ReferralCode({
+  handleReferralApply,
+  handleReferralChange,
+  referralCode,
+}) {
   return (
     <div className="d-flex justify-content-start">
       <input
@@ -11,11 +13,15 @@ export default function ReferralCode() {
         id="referral_code"
         name="referral_code"
         placeholder="Referral or discount code"
-        onChange={onChange}
+        onChange={handleReferralChange}
         value={referralCode}
         required
       />
-      <button type="button" className="btn btn-primary col-4">
+      <button
+        onClick={handleReferralApply}
+        type="button"
+        className="btn btn-primary col-4"
+      >
         Apply
       </button>
     </div>

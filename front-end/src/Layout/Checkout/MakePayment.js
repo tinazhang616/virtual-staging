@@ -1,11 +1,20 @@
+import ReturningCustomer from "./component/ReturningCustomer";
+import { useSelector } from "react-redux";
+
 export default function MakePayment() {
+  const state = useSelector((state) => state.todos);
+  console.log("this is state at payout", state);
+
   return (
     <div className="row col-md-8 mx-auto">
       <div class="row g-5">
+        <div>
+          <ReturningCustomer />
+        </div>
         <div class="col-md-5 col-lg-4 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-primary">Your cart</span>
-            <span class="badge bg-primary rounded-pill">3</span>
+            <span class="badge bg-primary rounded-pill">{state.length}</span>
           </h4>
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -29,34 +38,15 @@ export default function MakePayment() {
               </div>
               <span class="text-muted">$5</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between bg-light">
-              <div class="text-success">
-                <h6 class="my-0">Promo code</h6>
-                <small>EXAMPLECODE</small>
-              </div>
-              <span class="text-success">−$5</span>
-            </li>
+
             <li class="list-group-item d-flex justify-content-between">
               <span>Total (USD)</span>
               <strong>$20</strong>
             </li>
           </ul>
-
-          <form class="card p-2">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Promo code"
-              />
-              <button type="submit" class="btn btn-secondary">
-                Redeem
-              </button>
-            </div>
-          </form>
         </div>
         <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Billing address</h4>
+          <h4 class="mb-3">Account details</h4>
           <form class="needs-validation" noV alidate="">
             <div class="row g-3">
               <div class="col-sm-6">
@@ -69,11 +59,8 @@ export default function MakePayment() {
                   id="firstName"
                   placeholder=""
                   value=""
-                  required=""
+                  required
                 />
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
               </div>
 
               <div class="col-sm-6">
@@ -88,70 +75,50 @@ export default function MakePayment() {
                   value=""
                   required=""
                 />
-                <div class="invalid-feedback">Valid last name is required.</div>
               </div>
-
-              <div class="col-12">
-                <label for="username" class="form-label">
-                  Username
-                </label>
-                <div class="input-group has-validation">
-                  <span class="input-group-text">@</span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="username"
-                    placeholder="Username"
-                    required=""
-                  />
-                  <div class="invalid-feedback">Your username is required.</div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <label for="email" class="form-label">
-                  Email <span class="text-muted">(Optional)</span>
+              <div className="col-12">
+                <label htmlFor="email" className="form-label">
+                  Email
                 </label>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="email"
                   placeholder="you@example.com"
+                  required
                 />
-                <div class="invalid-feedback">
-                  Please enter a valid email address for shipping updates.
-                </div>
               </div>
 
-              <div class="col-12">
-                <label for="address" class="form-label">
-                  Address
+              <div className="col-12">
+                <label htmlFor="company" className="form-label">
+                  Company (optional)
+                </label>
+                <input type="text" className="form-control" id="company" />
+              </div>
+              <div className="col-md-6">
+                <label htmlFor="phone" className="form-label">
+                  Phone
                 </label>
                 <input
-                  type="text"
-                  class="form-control"
-                  id="address"
-                  placeholder="1234 Main St"
-                  required=""
+                  type="number"
+                  className="form-control"
+                  id="phone"
+                  required
                 />
-                <div class="invalid-feedback">
-                  Please enter your shipping address.
-                </div>
               </div>
-
-              <div class="col-12">
-                <label for="address2" class="form-label">
-                  Address 2 <span class="text-muted">(Optional)</span>
+              <div className="col-md-6">
+                <label htmlFor="zip" className="form-label">
+                  Zip Code
                 </label>
                 <input
-                  type="text"
-                  class="form-control"
-                  id="address2"
-                  placeholder="Apartment or suite"
+                  type="number"
+                  className="form-control"
+                  id="zip"
+                  required
                 />
               </div>
 
-              <div class="col-md-5">
+              <div class="col-md-6">
                 <label for="country" class="form-label">
                   Country
                 </label>
@@ -164,11 +131,11 @@ export default function MakePayment() {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <label for="state" class="form-label">
+              <div class="col-md-6">
+                <label htmlFor="state" className="form-label">
                   State
                 </label>
-                <select class="form-select" id="state" required="">
+                <select class="form-select" id="state">
                   <option value="">Choose...</option>
                   <option>California</option>
                 </select>
@@ -176,40 +143,20 @@ export default function MakePayment() {
                   Please provide a valid state.
                 </div>
               </div>
-
-              <div class="col-md-3">
-                <label for="zip" class="form-label">
-                  Zip
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="zip"
-                  placeholder=""
-                  required=""
-                />
-                <div class="invalid-feedback">Zip code required.</div>
-              </div>
             </div>
 
             <hr class="my-4" />
-
-            <div class="form-check">
+            <div className="col-12 p-0">
+              <h4 className="my-3">Additional information</h4>
+              <label htmlFor="information" className="form-label">
+                Invoice Description (optional)
+              </label>
               <input
-                type="checkbox"
-                class="form-check-input"
-                id="same-address"
+                type="text"
+                className="form-control"
+                id="information"
+                placeholder="Project name to show on invoice"
               />
-              <label class="form-check-label" for="same-address">
-                Shipping address is the same as my billing address
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="save-info" />
-              <label class="form-check-label" for="save-info">
-                Save this information for next time
-              </label>
             </div>
 
             <hr class="my-4" />

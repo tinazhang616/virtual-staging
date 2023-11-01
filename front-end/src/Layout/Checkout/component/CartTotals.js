@@ -13,11 +13,11 @@ export default function CartTotals({ total }) {
         <table className="table table-borderless bg-light p-5 rounded">
           <tr className="fs-5 py-2">
             <th>Subtotal</th>
-            <td>${total}</td>
+            <td>$ {total ? total : 0}</td>
           </tr>
           <tr className="fs-5 py-2">
             <th>Total</th>
-            <td className="fw-bolder">${total}</td>
+            <td className="fw-bolder">$ {total ? total : 0}</td>
           </tr>
         </table>
       </div>

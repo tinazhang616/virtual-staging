@@ -15,6 +15,7 @@ import FloorPlan from "./Services/FloorPlan";
 import Remodel from "./Services/Remodel";
 import Checkout from "./Checkout/Checkout";
 import MakePayment from "./Checkout/MakePayment";
+import PasswordReset from "./Assist/PasswordReset";
 
 function Routes() {
   return (
@@ -63,6 +64,9 @@ function Routes() {
       </Route>
       <Route path="/checkout">
         <MakePayment />
+      </Route>
+      <Route path="/password-reset">
+        <PasswordReset />
       </Route>
       <Route>
         <NotFound />
