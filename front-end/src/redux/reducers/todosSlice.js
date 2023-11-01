@@ -23,7 +23,8 @@ const todosSlice = createSlice({
     todoAdded(state, action) {
       let services = state.service;
       let newAdd = action.payload.service;
-      let index = services.findIndex((e) => (e.service = newAdd));
+      let index = services.findIndex((e) => e.service === newAdd);
+      console.log("this is add index in slide", index);
       if (index >= 0) {
         state.service[index].quantity =
           +state.service[index].quantity + +action.payload.quantity;

@@ -1,47 +1,55 @@
+import totalPrice from "../../utils/totalPrice";
 import ReturningCustomer from "./component/ReturningCustomer";
 import { useSelector } from "react-redux";
 
 export default function MakePayment() {
   const state = useSelector((state) => state.todos);
+  const discount = state.discount;
+  const VSDiscount = state.VSDiscount;
   console.log("this is state at payout", state);
+  let total = totalPrice(state);
 
   return (
     <div className="row col-md-8 mx-auto">
-      <div class="row g-5">
+      <div className="row g-5">
         <div>
           <ReturningCustomer />
         </div>
-        <div class="col-md-5 col-lg-4 order-md-last">
-          <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-primary">Your cart</span>
-            <span class="badge bg-primary rounded-pill">{state.length}</span>
+        <div className="col-md-5 col-lg-4 order-md-last">
+          <h4 className="d-flex justify-content-between align-items-center mb-3">
+            <span className="text-primary">Your order</span>
+            <span className="badge bg-primary rounded-pill">
+              {state.length}
+            </span>
           </h4>
-          <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Product name</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$12</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Second product</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$8</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Third item</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$5</span>
-            </li>
+          <ul className="list-group mb-3">
+            {state.service.map((e) => {
+              return (
+                <li className="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">
+                      {e.service}{" "}
+                      <small class="text-muted">x {e.quantity}</small>
+                    </h6>
+                  </div>
+                  <span class="text-muted">
+                    $
+                    {e.quantity *
+                      e.price *
+                      discount *
+                      (e.service === "Virtual Staging"
+                        ? VSDiscount
+                        : e.service === "Virtual Staging - Plus"
+                        ? VSDiscount
+                        : 1)}
+                  </span>
+                </li>
+              );
+            })}
 
             <li class="list-group-item d-flex justify-content-between">
               <span>Total (USD)</span>
-              <strong>$20</strong>
+              <strong>$ {total}</strong>
             </li>
           </ul>
         </div>

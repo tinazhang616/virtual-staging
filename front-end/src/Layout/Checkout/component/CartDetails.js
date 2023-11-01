@@ -77,7 +77,7 @@ update in the next step */
               {state.service.map((e) => {
                 return (
                   <tr key={e.service}>
-                    <th className="d-flex justify-content-start">
+                    <th className="">
                       <button
                         type="button"
                         className="close"
@@ -109,10 +109,9 @@ update in the next step */
                         state.discount *
                         (e.service === "Virtual Staging"
                           ? state.VSDiscount
-                          : "Virtual Staging - Plus"
+                          : e.service === "Virtual Staging - Plus"
                           ? state.VSDiscount
                           : 1)}
-                      .00
                     </td>
                   </tr>
                 );
