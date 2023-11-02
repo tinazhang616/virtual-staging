@@ -1,8 +1,11 @@
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
-const service = require("./shopping.service");
+const service = require("./accounts.service");
 
 //return reservation according to required mobile_number or date
-async function list(req, res) {}
+async function list(req, res) {
+  let data = await service.list();
+  res.json({ data });
+}
 //read specific reservation through the reservation_id
 async function read(req, res) {}
 
