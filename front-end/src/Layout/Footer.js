@@ -4,8 +4,8 @@ function Footer() {
   return (
     <>
       <footer className="row py-4 py-md-5 text-light text-center">
-        <div className="d-flex col-md-8 mx-auto mb-md-5 justify-content-around">
-          <div className="col-4 mb-3">
+        <div className="d-flex col-lg-8 mx-auto justify-content-around">
+          <div className="col-lg-4 mb-3">
             <h5 className="my-4">Contact</h5>
             <ul
               className="list-unstyled small fs-6 fw-bolder"
@@ -51,7 +51,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-4 mb-3">
+          <div className="col-lg-4 mb-3">
             <h5 className="my-4">Explore</h5>
             <ul
               className="list-unstyled small fs-6 fw-bolder"
@@ -86,7 +86,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-4 mb-3">
+          <div className="col-md-4 mb-3">
             <h5 className="my-4">Resources</h5>
             <ul
               className="list-unstyled small fs-6 fw-bolder"

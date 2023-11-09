@@ -202,11 +202,11 @@ function VirtualStaging() {
           Get more with Virtual Staging Solutions
         </h2>
         <div className="row my-5 py-3">
-          <div className="col-md">
+          <div className="col-lg">
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/05/virtual-staging-service-photo-example.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/05/best-virtual-staging-service-before-example.jpg"
                   // srcSet="image-url-300.jpg 300w, image-url-768.jpg 768w, image-url-1280.jpg 1280w"
                   // sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"
                   alt="Image one"
@@ -215,7 +215,7 @@ function VirtualStaging() {
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/05/modern-livingroom-virtual-staging-service-example.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/05/best-virtual-staging-service-example.jpg"
                   // srcSet="image-url-300.jpg 300w, image-url-768.jpg 768w, image-url-1280.jpg 1280w"
                   // sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"
                   alt="Image two"
@@ -224,7 +224,7 @@ function VirtualStaging() {
               }
             />
           </div>
-          <div className="col-md my-3 ml-5">
+          <div className="col-lg my-3 ml-5">
             <h3>Expert designers you can trust</h3>
             <p className="fs-5">
               We know that high-quality results means hiring high-quality team
@@ -235,7 +235,7 @@ function VirtualStaging() {
             </p>
           </div>
         </div>
-        <div className="row my-5 py-3">
+        <div className="row flex-column-reverse flex-lg-row my-5 py-3">
           <div className="col-md my-3 me-5">
             <h3>Custom designs for each property</h3>
             <p className="fs-5">
@@ -270,11 +270,11 @@ function VirtualStaging() {
           </div>
         </div>
         <div className="row my-5 py-3">
-          <div className="col-md">
+          <div className="col-lg">
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/05/virtual-staging-service-photo-example.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/03_77_Wood_Road_703_East_Snowmass_Village_81615003-2.jpg"
                   // srcSet="image-url-300.jpg 300w, image-url-768.jpg 768w, image-url-1280.jpg 1280w"
                   // sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"
                   alt="Image one"
@@ -283,7 +283,7 @@ function VirtualStaging() {
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/05/modern-livingroom-virtual-staging-service-example.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/03_77_Wood_Road_703_East_Snowmass_Village_81615003.jpg"
                   // srcSet="image-url-300.jpg 300w, image-url-768.jpg 768w, image-url-1280.jpg 1280w"
                   // sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"
                   alt="Image two"
@@ -292,7 +292,7 @@ function VirtualStaging() {
               }
             />
           </div>
-          <div className="col-md my-3 ml-5">
+          <div className="col-lg my-3 ml-5">
             <h3>We do all of the research</h3>
             <p className="fs-5">
               We know the market is always changing. Whether it’s mid-century,
@@ -350,10 +350,10 @@ function VirtualStaging() {
             All purchases are backed by our 100% happiness guarantee
           </p>
           <div className="row d-flex justify-content-center">
-            <div className="col-md-4 my-2">
+            <div className="col-lg-4 my-2">
               <BasicService />
             </div>
-            <div className="col-md-4 my-2">
+            <div className="col-lg-4 my-2">
               <PlusService />
             </div>
           </div>

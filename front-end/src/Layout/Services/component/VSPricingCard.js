@@ -26,7 +26,7 @@ export default function VSPricingCard({ quantity }) {
     history.push("/cart");
   };
   return (
-    <div className="card text-center" style={{ width: "10rem" }}>
+    <div className="card text-center vs-cards" style={{ width: "10rem" }}>
       <div className="card-body ">
         {quantity ? card : <h5 className="card-title fs-3">Other Amount</h5>}
         <button

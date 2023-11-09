@@ -23,10 +23,13 @@ export default function BasicButton({ shoppingCart }) {
           <div className="modal-content">
             <div className="modal-header">
               <div>
-                <h1 className="modal-title fs-2" id="exampleModalLabel">
+                <h1
+                  className="modal-title fs-2 text-start"
+                  id="exampleModalLabel"
+                >
                   How many photos?
                 </h1>
-                <p className="d-block">
+                <p className="d-block fs-5 text-start">
                   Purchase as many credits as you’d like. Try to show the major
                   areas and two angles of the most important rooms.
                 </p>

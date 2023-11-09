@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div className="my-5 py-5">
       <section className="row col-md-8 mx-auto">
-        <div className="col-md bg-service text-white">
+        <div className="col-md bg-service text-white p-0 rounded-left">
           <div className="col-8 m-auto">
             <h4 className="my-5 pt-3">Our Services</h4>
             <p className="fs-5">
@@ -19,7 +19,7 @@ export default function Services() {
           <img
             src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/photo-1617806118233-18e1de247200-1024x576.webp"
             alt="services"
-            className="w-100"
+            className="w-100 rounded-right"
           />
         </div>
       </section>

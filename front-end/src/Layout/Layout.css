@@ -21,6 +21,7 @@ footer,.bg-service {
     background-color: rgb(230, 243, 255)!important;
     border:0px
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -81,4 +82,18 @@ padding: 16px 32px;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+  }
+
+  @media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 8vw!important;
+    }
+    h2 {
+        font-size:6vw!important;
+    }
+    .visibility{
+        visibility: hidden;
+
+    };
+
   }

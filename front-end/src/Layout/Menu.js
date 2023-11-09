@@ -40,8 +40,14 @@ function Menu() {
                 >
                   Service
                 </NavLink>
-                <ul className="dropdown-menu">
-                  <li>
+                <div className="dropdown-menu fs-5">
+                  <li className="d-flex justify-content-start">
+                    <img
+                      className="m-1"
+                      width="40"
+                      src="https://virtualstagingsolutions.com/wp-content/uploads/2019/10/virtualstaging-circle-150x150.png"
+                      alt="virtual-staging"
+                    />
                     <NavLink
                       className="dropdown-item"
                       to="/services/virtual-staging"
@@ -49,22 +55,46 @@ function Menu() {
                       Virtual Staging
                     </NavLink>
                   </li>
-                  <li>
+                  <li className="d-flex justify-content-start">
+                    <img
+                      className="m-1"
+                      width="40"
+                      src="https://virtualstagingsolutions.com/wp-content/uploads/2019/11/restyle-150x150.png"
+                      alt="restyle"
+                    />
                     <NavLink className="dropdown-item" to="/services/restyle">
                       Restyle
                     </NavLink>
                   </li>
-                  <li>
+                  <li className="d-flex justify-content-start">
+                    <img
+                      className="m-1"
+                      width="40"
+                      src="https://virtualstagingsolutions.com/wp-content/uploads/2018/04/remodel-150x150.png"
+                      alt="remodel"
+                    />
                     <NavLink className="dropdown-item" to="/services/remodel">
                       Remodel
                     </NavLink>
                   </li>
-                  <li>
+                  <li className="d-flex justify-content-start">
+                    <img
+                      className="m-1"
+                      width="40"
+                      src="https://virtualstagingsolutions.com/wp-content/uploads/2018/04/envision-150x150.png"
+                      alt="envision"
+                    />
                     <NavLink className="dropdown-item" to="/services/envision">
                       Envision
                     </NavLink>
                   </li>
-                  <li>
+                  <li className="d-flex justify-content-start">
+                    <img
+                      className="m-1"
+                      width="40"
+                      src="https://virtualstagingsolutions.com/wp-content/uploads/2021/11/3dfloorplan-icon-1-150x150.png"
+                      alt="floor-plan"
+                    />
                     <NavLink
                       className="dropdown-item"
                       to="/services/3d-floor-plan"
@@ -80,7 +110,7 @@ function Menu() {
                       All Service &gt;
                     </NavLink>
                   </li>
-                </ul>
+                </div>
               </li>
               <li className="nav-item dropdown">
                 <NavLink
@@ -92,7 +122,7 @@ function Menu() {
                 >
                   Resources
                 </NavLink>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu fs-5">
                   <li>
                     <NavLink className="dropdown-item" to="/furniture">
                       Furniture Library
