@@ -1,16 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useSelector } from "react-redux";
 function Menu() {
   const state = useSelector((state) => state.todos);
-  console.log(
-    "this is items in cart",
-    state,
-    "this is length",
-    state.service.length
-  );
+  let accountInfo = state.account;
+
   return (
     <div className="nav shadow-sm justify-content-between bg-white navbar navbar-expand-lg fixed-top">
       <div className="container-fluid mx-3">
@@ -120,9 +116,15 @@ function Menu() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/account">
-                  Account
-                </NavLink>
+                {Object.keys(accountInfo).length ? (
+                  <NavLink className="nav-link text-primary" to="/account">
+                    Hi, <span className="fst-italic">{accountInfo.name}</span>
+                  </NavLink>
+                ) : (
+                  <NavLink className="nav-link" to="/account">
+                    Account
+                  </NavLink>
+                )}
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/cart">

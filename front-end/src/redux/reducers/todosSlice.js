@@ -3,11 +3,16 @@ const initialState = {
   service: [],
   discount: 1,
   VSDiscount: 1,
+  account: {},
 };
 const todosSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {
+    /*
+    delete a service from state, 
+    verify VSdiscount ===1 if the virtual staging or virtual staging plus has been deleted
+     */
     todoDel(state, action) {
       const arrFilter = state.service.filter((x) => {
         return x.service !== action.payload;
@@ -50,9 +55,16 @@ const todosSlice = createSlice({
     todoDiscount(state, action) {
       state.discount = action.payload;
     },
+    /**update login information into state */
+    todoLogin(state, action) {
+      return (state = { ...state, account: action.payload });
+    },
+    todoLogout(state, action) {
+      console.log("hi");
+    },
   },
 });
 
-export const { todoDel, todoAdded, todoDiscount, todoUpdate } =
+export const { todoDel, todoAdded, todoDiscount, todoUpdate, todoLogin } =
   todosSlice.actions;
 export default todosSlice.reducer;

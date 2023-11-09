@@ -1,8 +1,6 @@
 exports.up = function (knex) {
   return knex.schema.createTable("shoppingdetails", (table) => {
     table.increments("order_id").primary();
-    table.string("name");
-    table.string("email");
     table.integer("envision").defaultTo(0);
     table.integer("virtual_staging").defaultTo(0);
     table.integer("remodel").defaultTo(0);

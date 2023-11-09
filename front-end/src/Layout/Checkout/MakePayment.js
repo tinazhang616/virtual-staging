@@ -1,13 +1,15 @@
 import totalPrice from "../../utils/totalPrice";
 import ReturningCustomer from "./component/ReturningCustomer";
 import { useSelector } from "react-redux";
+// import HandleCheckOut from "./component/HandleCheckOut";
+import { useState } from "react";
 
 export default function MakePayment() {
   const state = useSelector((state) => state.todos);
   const discount = state.discount;
   const VSDiscount = state.VSDiscount;
-  console.log("this is state at payout", state);
   let total = totalPrice(state);
+  const [checkoutInfo, setCheckoutInfo] = useState({});
 
   return (
     <div className="row col-md-8 mx-auto">
@@ -15,6 +17,7 @@ export default function MakePayment() {
         <div>
           <ReturningCustomer />
         </div>
+        {/* order detail */}
         <div className="col-md-5 col-lg-4 order-md-last">
           <h4 className="d-flex justify-content-between align-items-center mb-3">
             <span className="text-primary">Your order</span>
@@ -53,6 +56,7 @@ export default function MakePayment() {
             </li>
           </ul>
         </div>
+        {/* customer and payment detail */}
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Account details</h4>
           <form class="needs-validation" noV alidate="">
@@ -274,7 +278,11 @@ export default function MakePayment() {
 
             <hr class="my-4" />
 
-            <button class="w-100 btn btn-primary btn-lg" type="submit">
+            <button
+              class="w-100 btn btn-primary btn-lg"
+              type="submit"
+              // onSubmit={HandleCheckOut(total, state)}
+            >
               Continue to checkout
             </button>
           </form>
