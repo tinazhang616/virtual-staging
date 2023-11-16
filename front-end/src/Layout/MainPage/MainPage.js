@@ -293,13 +293,13 @@ function MainPage() {
         </div>
       </div>
       {/* section 9 explore all services */}
-      <div className="row m-auto my-5 d-flex justify-content-between bg-service rounded">
+      <div className="row m-0 my-5 d-flex justify-content-between bg-service rounded">
         <div className="col-lg-5 m-5 px-lg-5 text-white text-lg-start">
           <h3 className="text-start me-5">
             Get the industry's best marketing materials from the inventors of
             virtual staging.
           </h3>
-          <p className="fs-5 text-secondary text-start ">
+          <p className="fs-5 text-secondary text-start text-wrap ">
             Every virtual enhancement package includes:
           </p>
           <ul className="list-group-flush text-start">

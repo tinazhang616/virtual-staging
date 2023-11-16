@@ -1,88 +1,72 @@
-import { useState } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
-export default function ContactForm() {
-  const [formData, setFormData] = useState({});
-  const onChange = (e) => {};
+const ContactForm = () => {
+  const { register, handleSubmit, setValue, reset } = useForm();
+
+  const onSubmit = async (data) => {
+    // Handle form submission, including file upload
+    const formData = new FormData();
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("subject", data.subject);
+    formData.append("message", data.message);
+    formData.append("file", data.file[0]);
+
+    try {
+      const response = await axios.post(
+        "http://localhost:5001/contact-us",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      console.log("Server response:", response.data);
+      reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   return (
-    <div>
-      <form className="shadow-lg rounded row g-3 px-3 py-5 fs-5 fw-bolder">
-        <div className="col-md-6">
-          <label htmlFor="name" className="form-label">
-            Your Name:
-          </label>
-          <input
-            className="form-control"
-            type="text"
-            id="name"
-            name="name"
-            onChange={onChange}
-            value={formData.name}
-            required
-          />
-        </div>
-        <div className="col-md-6">
-          <label htmlFor="email" className="form-label">
-            Email
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            name="email"
-            id="email"
-            onChange={onChange}
-            value={formData.email}
-            required
-          />
-        </div>
-
-        <div className="col-12">
-          <label htmlFor="subject" className="form-label">
-            Subject
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            name="subject"
-            id="subject"
-            onChange={onChange}
-            value={formData.subject}
-          />
-        </div>
-        <div className="col-12">
-          <label htmlFor="message" className="form-label">
-            Message
-          </label>
-          <textarea
-            className="form-control"
-            id="subject"
-            rows="4"
-            name="message"
-            onChange={onChange}
-            value={formData.messgae}
-            required
-          ></textarea>
-        </div>
-        <div className="col-12">
-          <label htmlFor="files" className="form-label">
-            Attach Files
-          </label>
-          <input
-            className="form-control"
-            name="files"
-            type="file"
-            id="files"
-            onChange={onChange}
-            value={formData.files}
-            multiple
-          />
-        </div>
-
-        <div className="col-12 my-5">
-          <button type="submit" className="btn btn-primary">
-            Send
-          </button>
-        </div>
-      </form>
-    </div>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="row g-3 shadow-lg rounded m-3 p-5 fs-5"
+    >
+      <div className="col-12">
+        <label className="form-label">Name:</label>
+        <input className="form-control" {...register("name")} />
+      </div>
+      <div className="col-12">
+        <label className="form-label">Email:</label>
+        <input className="form-control" {...register("email")} />
+      </div>
+      <div className="col-12">
+        <label className="form-label">Subject:</label>
+        <input className="form-control" {...register("subject")} />
+      </div>
+      <div className="col-12">
+        <label className="form-label">Message:</label>
+        <textarea className="form-control" rows="5" {...register("message")} />
+      </div>
+      <div className="col-12">
+        <label className="form-label">File:</label>
+        <input
+          className="form-control"
+          type="file"
+          onChange={(e) => setValue("file", e.target.files)}
+        />
+      </div>
+      <div className="col-12">
+        <button className="btn btn-primary w-100 mt-4" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
   );
-}
+};
+export default ContactForm;
