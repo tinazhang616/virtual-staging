@@ -395,11 +395,13 @@ function VirtualStaging() {
             role="button"
             onClick={() => history.push("/services/restyle")}
           >
-            <img
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/restyle-1.png"
-              className="card-img-top"
-              alt="restyle"
-            />
+            <div className="service-card mb-5">
+              <img
+                src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/restyle-1.png"
+                className="card-img-top"
+                alt="restyle"
+              />
+            </div>
             <div className="card-body text-left ms-3 my-3">
               <h4 className="card-title">Restyle</h4>
               <h4 className="card-title">Remove furniture &gt;</h4>
@@ -410,11 +412,13 @@ function VirtualStaging() {
             role="button"
             onClick={() => history.push("/services/remodel")}
           >
-            <img
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png"
-              className="card-img-top"
-              alt="remodel"
-            />
+            <div className="service-card mb-5">
+              <img
+                src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png"
+                className="card-img-top"
+                alt="remodel"
+              />
+            </div>
             <div className="card-body text-left ms-3 my-3">
               <h4 className="card-title">Remodel</h4>
               <h4 className="card-title">Structural edits &gt;</h4>
@@ -425,11 +429,13 @@ function VirtualStaging() {
             role="button"
             onClick={() => history.push("/services/envision")}
           >
-            <img
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png"
-              className="card-img-top"
-              alt="envision"
-            />
+            <div className="service-card mb-5">
+              <img
+                src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/envision.png"
+                className="card-img-top"
+                alt="envision"
+              />
+            </div>
             <div className="card-body text-left ms-3 my-3">
               <h4 className="card-title">Envision</h4>
               <h4 className="card-title">Virtual construction &gt;</h4>
@@ -440,11 +446,13 @@ function VirtualStaging() {
             role="button"
             onClick={() => history.push("/services/3d-floor-plan")}
           >
-            <img
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/3Dfloorplan-1024x1024.jpg"
-              className="card-img-top"
-              alt="3d floor plan"
-            />
+            <div className="service-card mb-5">
+              <img
+                src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/3Dfloorplan-1024x1024.jpg"
+                className="card-img-top"
+                alt="3d floor plan"
+              />
+            </div>
             <div className="card-body text-left ms-3 my-3">
               <h4 className="card-title">3D Floor Plan &gt;</h4>
             </div>

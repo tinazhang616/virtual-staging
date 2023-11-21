@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -34,7 +34,7 @@ function Menu() {
                 <NavLink
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
-                  to="/#"
+                  to="/"
                   role="button"
                   aria-expanded="false"
                 >
@@ -116,7 +116,7 @@ function Menu() {
                 <NavLink
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
-                  to="/#"
+                  to="/"
                   role="button"
                   aria-expanded="false"
                 >

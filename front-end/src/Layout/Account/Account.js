@@ -4,6 +4,9 @@ import ErrorAlert from "../ErrorAlert";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { todoLogin } from "../../redux/reducers/todosSlice";
 import { useDispatch } from "react-redux";
+import GoogleLogin from "react-google-login";
+import FacebookLogin from "react-facebook-login";
+import { handleFaceBookSignUp, handleGoogleSignUp } from "../../utils/SignUp";
 function Account() {
   const dispatch = useDispatch();
   const history = useHistory();
@@ -74,12 +77,6 @@ function Account() {
           <div className="col-md-5">
             <h2>Login</h2>
             <hr />
-            <button className="btn btn-primary mb-4 w-100">
-              <span className="fa fa-google me-2"></span>Sign in With Google
-            </button>
-            <button className="btn btn-primary mb-4 w-100">
-              <span className="fa fa-facebook me-2"></span>Sign in With Facebook
-            </button>
             <form>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
@@ -137,12 +134,21 @@ function Account() {
           <div className="col-md-5">
             <h2>Register</h2>
             <hr />
-            <button className="btn btn-primary mb-4 w-100">
-              <span className="fa fa-google me-2"></span>Sign up With Google
-            </button>
-            <button className="btn btn-primary mb-4 w-100">
-              <span className="fa fa-facebook me-2"></span>Sign up With Facebook
-            </button>
+            <GoogleLogin
+              className="btn btn-primary mb-4 w-100"
+              clientId="AIzaSyBQf5drOh_oPJ92xsPMBJsVqnhuyG-N5Vo"
+              buttonText="Sign up with Google"
+              onSuccess={handleGoogleSignUp}
+              onFailure={handleGoogleSignUp}
+              cookiePolicy={"single_host_origin"}
+            />
+            <FacebookLogin
+              className="btn btn-primary mb-4 w-100"
+              appId="YOUR_FACEBOOK_APP_ID"
+              fields="name,email,picture"
+              callback={handleFaceBookSignUp}
+              icon="fa-facebook"
+            />
             <form>
               <div className="mb-3">
                 <label htmlFor="nameregister" className="form-label">

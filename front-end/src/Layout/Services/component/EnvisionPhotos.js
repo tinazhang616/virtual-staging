@@ -1,4 +1,4 @@
-export default function RestylePhotos() {
+export default function EnvisionPhotos() {
   return (
     <div>
       <div className="container text-center">
@@ -14,14 +14,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Master-bedroom-existing-2.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/1.jpg"
                   alt="1 slide"
                   data-target="#carouselExample"
                   data-slide-to="0"
                 />
-                <div className="middle">
-                  <div className="text">Before</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Yard</div>
               </div>
             </div>
           </div>
@@ -30,14 +30,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Master-bedroom-existing.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/2.jpg"
                   alt="2 slide"
                   data-target="#carouselExample"
                   data-slide-to="1"
                 />
-                <div className="middle">
-                  <div className="text">After</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Front Yard</div>
               </div>
             </div>
           </div>
@@ -46,14 +46,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/7504-Collins-Ranch-Ter-17-2.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/3.jpg"
                   alt="3 slide"
                   data-target="#carouselExample"
                   data-slide-to="2"
                 />
-                <div className="middle">
-                  <div className="text">Before</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Yard</div>
               </div>
             </div>
           </div>
@@ -62,31 +62,31 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/7504-Collins-Ranch-Ter-17.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/4.jpg"
                   alt="4 slide"
                   data-target="#carouselExample"
                   data-slide-to="3"
                 />
-                <div className="middle">
-                  <div className="text">After</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Front Yard</div>
               </div>
             </div>
           </div>
           {/* row 2 */}
           <div className="col">
             <div className="gallery">
-              <div className="gallery-img">
+              <div className="gallery-img ">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/3845-N-Versailles-Ave-12-FULL-2.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/5.jpg"
                   alt="5 slide"
                   data-target="#carouselExample"
                   data-slide-to="4"
                 />
-                <div className="middle">
-                  <div className="text">Before</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Driveway</div>
               </div>
             </div>
           </div>
@@ -95,14 +95,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/3845-N-Versailles-Ave-12-FULL.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/6.jpg"
                   alt="6 slide"
                   data-target="#carouselExample"
                   data-slide-to="5"
                 />
-                <div className="middle">
-                  <div className="text">After</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Yard</div>
               </div>
             </div>
           </div>
@@ -111,14 +111,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/518-Black-Coral-Way-10-2.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/7.jpg"
                   alt="7 slide"
                   data-target="#carouselExample"
                   data-slide-to="6"
                 />
-                <div className="middle">
-                  <div className="text">Before</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Pool Yard</div>
               </div>
             </div>
           </div>
@@ -127,14 +127,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/518-Black-Coral-Way-10.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/8.jpg"
                   alt="8 slide"
                   data-target="#carouselExample"
                   data-slide-to="7"
                 />
-                <div className="middle">
-                  <div className="text">After</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Apartment Complex</div>
               </div>
             </div>
           </div>
@@ -144,14 +144,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/03Dining-Room-2.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/Exterior.jpg"
                   alt="9 slide"
                   data-target="#carouselExample"
                   data-slide-to="8"
                 />
-                <div className="middle">
-                  <div className="text">Before</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Yard</div>
               </div>
             </div>
           </div>
@@ -160,14 +160,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/03Dining-Room.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/Pool-After.jpg"
                   alt="10 slide"
                   data-target="#carouselExample"
                   data-slide-to="9"
                 />
-                <div className="middle">
-                  <div className="text">After</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Pool Yard</div>
               </div>
             </div>
           </div>
@@ -176,14 +176,14 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/04/virtual-staging-declutter-before-2.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/Interior.jpg"
                   alt="11 slide"
                   data-target="#carouselExample"
                   data-slide-to="10"
                 />
-                <div className="middle">
-                  <div className="text">Before</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Interior</div>
               </div>
             </div>
           </div>
@@ -192,14 +192,47 @@ export default function RestylePhotos() {
               <div className="gallery-img">
                 <img
                   className="image"
-                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/04/virtual-staging-declutter-after-2.jpg"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/1-copy.jpg"
                   alt="12 slide"
                   data-target="#carouselExample"
                   data-slide-to="11"
                 />
-                <div className="middle">
-                  <div className="text">After</div>
-                </div>
+              </div>
+              <div className="middle">
+                <div className="text">3D Rendered Interior</div>
+              </div>
+            </div>
+          </div>
+          {/* row 4 */}
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/2-1.jpg"
+                  alt="13 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="12"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">Apartment Rendering</div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/4-1.jpg"
+                  alt="14 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="13"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">Bathroom Rendering</div>
               </div>
             </div>
           </div>
@@ -235,74 +268,86 @@ export default function RestylePhotos() {
                   <div className="carousel-inner">
                     <div className="carousel-item active">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Master-bedroom-existing-2.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/1.jpg"
                         alt="1 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Master-bedroom-existing.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/2.jpg"
                         alt="2 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/7504-Collins-Ranch-Ter-17-2.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/3.jpg"
                         alt="3 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/7504-Collins-Ranch-Ter-17.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/4.jpg"
                         alt="4 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/3845-N-Versailles-Ave-12-FULL-2.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/5.jpg"
                         alt="5 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/3845-N-Versailles-Ave-12-FULL.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/6.jpg"
                         alt="6 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/518-Black-Coral-Way-10-2.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/7.jpg"
                         alt="7 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/518-Black-Coral-Way-10.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/8.jpg"
                         alt="8 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/03Dining-Room-2.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/Exterior.jpg"
                         alt="9 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/03Dining-Room.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/Pool-After.jpg"
                         alt="10 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/04/virtual-staging-declutter-before-2.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/Interior.jpg"
                         alt="11 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/04/virtual-staging-declutter-after-2.jpg"
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/1-copy.jpg"
                         alt="12 slide"
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/2-1.jpg"
+                        alt="13 slide"
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/4-1.jpg"
+                        alt="14 slide"
                       />
                     </div>
                   </div>

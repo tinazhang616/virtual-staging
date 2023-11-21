@@ -6,6 +6,7 @@ export default function RemodelCard() {
       <img
         src="https://virtualstagingsolutions.com/wp-content/uploads/2018/02/rm-100x100.png"
         className="w-25"
+        alt="remodel-icon"
       />
 
       <h4>Remodel</h4>

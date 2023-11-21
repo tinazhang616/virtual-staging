@@ -9,101 +9,133 @@ export default function RemodelPhotos() {
           data-target="#photoModal"
         >
           {/* row 1 */}
-          <div className="col restyle">
-            <img
-              className=" rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Kitchen-existing-2.jpg"
-              alt="1 slide"
-              data-target="#carouselExample"
-              data-slide-to="0"
-            />
-            <div className="middle">
-              <div className="text">Before</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Kitchen-existing-2.jpg"
+                  alt="1 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="0"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">Before</div>
+              </div>
             </div>
           </div>
-          <div className="col restyle">
-            <img
-              className="rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Kitchen-existing.jpg"
-              alt="2 slide"
-              data-target="#carouselExample"
-              data-slide-to="1"
-            />
-            <div className="middle">
-              <div className="text">After</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Kitchen-existing.jpg"
+                  alt="2 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="1"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">After</div>
+              </div>
             </div>
           </div>
-          <div className="col restyle">
-            <img
-              className=" rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bar-existing-2.jpg"
-              alt="3 slide"
-              data-target="#carouselExample"
-              data-slide-to="2"
-            />
-            <div className="middle">
-              <div className="text">Before</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bar-existing-2.jpg"
+                  alt="3 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="2"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">Before</div>
+              </div>
             </div>
           </div>
-          <div className="col restyle">
-            <img
-              className="rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bar-existing.jpg"
-              alt="4 slide"
-              data-target="#carouselExample"
-              data-slide-to="3"
-            />
-            <div className="middle">
-              <div className="text">After</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bar-existing.jpg"
+                  alt="4 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="3"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">After</div>
+              </div>
             </div>
           </div>
           {/* row 2 */}
-          <div className="col restyle">
-            <img
-              className="rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/IMG_6554.jpg"
-              alt="5 slide"
-              data-target="#carouselExample"
-              data-slide-to="4"
-            />
-            <div className="middle">
-              <div className="text">Before</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/IMG_6554.jpg"
+                  alt="5 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="4"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">Before</div>
+              </div>
             </div>
           </div>
-          <div className="col restyle">
-            <img
-              className="rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bathroom-2.jpg"
-              alt="6 slide"
-              data-target="#carouselExample"
-              data-slide-to="5"
-            />
-            <div className="middle">
-              <div className="text">After</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bathroom-2.jpg"
+                  alt="6 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="5"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">After</div>
+              </div>
             </div>
           </div>
-          <div className="col restyle">
-            <img
-              className="rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Fontaine-16018-IMG-32_1_1.jpg"
-              alt="7 slide"
-              data-target="#carouselExample"
-              data-slide-to="6"
-            />
-            <div className="middle">
-              <div className="text">Before</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Fontaine-16018-IMG-32_1_1.jpg"
+                  alt="7 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="6"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">Before</div>
+              </div>
             </div>
           </div>
-          <div className="col restyle">
-            <img
-              className="rounded image w-100"
-              src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/01_Post-3.jpg"
-              alt="8 slide"
-              data-target="#carouselExample"
-              data-slide-to="7"
-            />
-            <div className="middle">
-              <div className="text">After</div>
+          <div className="col">
+            <div className="gallery">
+              <div className="gallery-img">
+                <img
+                  className="image"
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/01_Post-3.jpg"
+                  alt="8 slide"
+                  data-target="#carouselExample"
+                  data-slide-to="7"
+                />
+              </div>
+              <div className="middle">
+                <div className="text">After</div>
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +149,7 @@ export default function RemodelPhotos() {
         >
           <div className="modal-dialog modal-fullscreen" role="document">
             <div className="modal-content">
-              <div className="modal-header bg-primary">
+              <div className="modal-header">
                 <button
                   type="button"
                   className="close"
@@ -127,7 +159,7 @@ export default function RemodelPhotos() {
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div className="modal-body bg-primary">
+              <div className="modal-body">
                 <div
                   id="carouselExample"
                   className="carousel slide"
@@ -135,73 +167,51 @@ export default function RemodelPhotos() {
                   data-interval="false"
                   data-pause="hover"
                 >
-                  <ol className="carousel-indicators">
-                    <li
-                      data-target="#carouselExample"
-                      data-slide-to="0"
-                      className="active"
-                    ></li>
-                    <li data-target="#carouselExample" data-slide-to="1"></li>
-                    <li data-target="#carouselExample" data-slide-to="2"></li>
-                    <li data-target="#carouselExample" data-slide-to="3"></li>
-                    <li data-target="#carouselExample" data-slide-to="4"></li>
-                    <li data-target="#carouselExample" data-slide-to="5"></li>
-                    <li data-target="#carouselExample" data-slide-to="6"></li>
-                    <li data-target="#carouselExample" data-slide-to="7"></li>
-                  </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
                       <img
-                        className="d-block w-80 m-auto"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Kitchen-existing-2.jpg"
                         alt="1 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Kitchen-existing.jpg"
                         alt="2 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bar-existing-2.jpg"
                         alt="3 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bar-existing.jpg"
                         alt="4 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/IMG_6554.jpg"
                         alt="5 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Bathroom-2.jpg"
                         alt="6 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/Fontaine-16018-IMG-32_1_1.jpg"
                         alt="7 slide"
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        className="d-block w-100"
                         src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/01_Post-3.jpg"
                         alt="8 slide"
                       />
@@ -233,29 +243,9 @@ export default function RemodelPhotos() {
                   </a>
                 </div>
               </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
             </div>
           </div>
         </div>
-        {/* <!-- Custom Styling Toggle. For demo purposes only. --> */}
-        {/* <div className="switch-wrap">
-          <label className="switch">
-            <input type="checkbox" id="styleSwitch" onclick="switchStyle();" />
-            <span className="slider round"></span>
-          </label>
-          <span className="switch-text">
-            Toggle between <em>Bootstrap defaults</em> and <em>custom styling</em>
-            .
-          </span>
-        </div> */}
       </div>
     </div>
   );

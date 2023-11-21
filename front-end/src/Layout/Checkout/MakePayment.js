@@ -1,15 +1,12 @@
 import totalPrice from "../../utils/totalPrice";
 import ReturningCustomer from "./component/ReturningCustomer";
 import { useSelector } from "react-redux";
-// import HandleCheckOut from "./component/HandleCheckOut";
-import { useState } from "react";
 
 export default function MakePayment() {
   const state = useSelector((state) => state.todos);
   const discount = state.discount;
   const VSDiscount = state.VSDiscount;
   let total = totalPrice(state);
-  const [checkoutInfo, setCheckoutInfo] = useState({});
 
   return (
     <div className="row col-md-8 mx-auto">

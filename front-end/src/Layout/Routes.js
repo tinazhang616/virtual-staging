@@ -16,8 +16,10 @@ import Remodel from "./Services/Remodel";
 import Checkout from "./Checkout/Checkout";
 import MakePayment from "./Checkout/MakePayment";
 import PasswordReset from "./Assist/PasswordReset";
+import useScrollToTop from "../utils/useScrollToTop";
 
 function Routes() {
+  useScrollToTop();
   return (
     <Switch>
       <Route exact={true} path="/">

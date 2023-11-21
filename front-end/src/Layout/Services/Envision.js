@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceAddtoCartButton from "./component/ServiceAddtoCartButton";
-import RemodelPhotos from "./component/RemodelPhotos";
 import EnvisionQuestions from "./component/EnvisionQuestions";
+import EnvisionPhotos from "./component/EnvisionPhotos";
 
 export default function Envision() {
   return (
@@ -88,7 +88,7 @@ export default function Envision() {
       <section className="row col-md-8 mx-auto">
         <h3 className="text-left m-3">Thoughtful designs on every project</h3>
 
-        <RemodelPhotos />
+        <EnvisionPhotos />
       </section>
       {/* process */}
       <section className="row col-md-8 mx-auto my-5 py-5">
