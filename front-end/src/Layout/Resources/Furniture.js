@@ -1,11 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import AllFunitureGallery from "./components/AllFurnitureGallery";
 
 export default function Furniture() {
   const history = useHistory();
   return (
     <div className="my-5 py-5">
-      {/* benefit of restyle */}
+      {/* start to order */}
       <section className="row col-md-8 mx-auto my-5">
         <div className="m-auto col-md-10 text-center">
           <h1>Virtual Staging Furniture</h1>
@@ -20,11 +21,15 @@ export default function Furniture() {
           onClick={() => history.push("/services")}
         >
           <span className="fa fa-shopping-cart me-3"></span>
-          Add To Cart
+          Start Your Order &gt;
         </button>
       </section>
-      {/* photo gallery */}
-      <section className="row col-md-8 mx-auto"></section>
+      {/* all furnitures gallery */}
+      <section className="row col-md-8 mx-auto">
+        {/* rooms filter */}
+
+        <AllFunitureGallery />
+      </section>
     </div>
   );
 }

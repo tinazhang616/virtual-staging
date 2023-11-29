@@ -5,16 +5,18 @@ export default function AllServices() {
   return (
     <div>
       <div class="container text-center">
-        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+        <div class="row row-cols-lg-3 g-2 g-lg-3">
           {/* virtual staging */}
           <div class="col">
             <div class="p-3">
-              <img
-                src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png"
-                alt="virtual staging"
-                className="w-100 service-img"
-                onClick={() => history.push("/services/virtual-staging")}
-              />
+              <div className="service-card mb-5">
+                <img
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png"
+                  alt="virtual staging"
+                  className="w-100 service-img"
+                  onClick={() => history.push("/services/virtual-staging")}
+                />
+              </div>
               <div className="d-flex justify-content-between m-3">
                 <div className="text-left">
                   <h3>Virtual Staging</h3>
@@ -37,12 +39,14 @@ export default function AllServices() {
           {/* restyle */}
           <div class="col">
             <div class="p-3">
-              <img
-                src="https://virtualstagingsolutions.com/wp-content/uploads/2023/01/restyle-2.png"
-                alt="restyle"
-                className="w-100 service-img"
-                onClick={() => history.push("/services/restyle")}
-              />
+              <div className="service-card mb-5">
+                <img
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2023/01/restyle-2.png"
+                  alt="restyle"
+                  className="w-100 service-img"
+                  onClick={() => history.push("/services/restyle")}
+                />
+              </div>
               <div className="d-flex justify-content-between m-3">
                 <div className="text-left">
                   <h3>Restyle</h3>
@@ -65,12 +69,14 @@ export default function AllServices() {
           {/* remodel */}
           <div class="col">
             <div class="p-3">
-              <img
-                src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png"
-                alt="remodel"
-                className="w-100 service-img"
-                onClick={() => history.push("/services/remodel")}
-              />
+              <div className="service-card mb-5">
+                <img
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/remodel-2.png"
+                  alt="remodel"
+                  className="w-100 service-img"
+                  onClick={() => history.push("/services/remodel")}
+                />
+              </div>
               <div className="d-flex justify-content-between m-3">
                 <div className="text-left">
                   <h3>Remodel</h3>
@@ -93,12 +99,14 @@ export default function AllServices() {
           {/* envision */}
           <div class="col">
             <div class="p-3">
-              <img
-                src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png"
-                alt="envision"
-                className="w-100 service-img"
-                onClick={() => history.push("/services/envision")}
-              />
+              <div className="service-card mb-5">
+                <img
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2021/09/virtualstaging.png"
+                  alt="envision"
+                  className="w-100 service-img"
+                  onClick={() => history.push("/services/envision")}
+                />
+              </div>
               <div className="d-flex justify-content-between m-3">
                 <div className="text-left">
                   <h3>Envision</h3>
@@ -121,12 +129,14 @@ export default function AllServices() {
           {/* 3d floor plan */}
           <div class="col">
             <div class="p-3">
-              <img
-                src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/3Dfloorplan-1024x1024.jpg"
-                alt="3d floor plan"
-                className="w-100 service-img"
-                onClick={() => history.push("/services/3d-floor-plan")}
-              />
+              <div className="service-card mb-5">
+                <img
+                  src="https://virtualstagingsolutions.com/wp-content/uploads/2022/03/3Dfloorplan-1024x1024.jpg"
+                  alt="3d floor plan"
+                  className="w-100 service-img"
+                  onClick={() => history.push("/services/3d-floor-plan")}
+                />
+              </div>
               <div className="d-flex justify-content-between m-3">
                 <div className="text-left">
                   <h3>3D Floor Plan</h3>

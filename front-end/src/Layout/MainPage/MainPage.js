@@ -320,7 +320,7 @@ function MainPage() {
               Happiness Guaranteed
             </li>
           </ul>
-          <Link to="/services/restyle" className="btn btn-primary my-5">
+          <Link to="/services" className="btn btn-primary my-5">
             Explore Our Services &gt;
           </Link>
         </div>

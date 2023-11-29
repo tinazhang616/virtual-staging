@@ -246,7 +246,7 @@ export default function EnvisionPhotos() {
           aria-hidden="true"
         >
           <div className="modal-dialog modal-fullscreen" role="document">
-            <div className="modal-content">
+            <div className="modal-content modal-picture">
               <div className="modal-header">
                 <button
                   type="button"

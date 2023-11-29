@@ -1,4 +1,7 @@
 
+body{
+  font-family:"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif!important;
+}
 .navbar-brand {
     letter-spacing: 5px;
 }
@@ -78,7 +81,6 @@ opacity: 1;
 }
 
 .text {
-font-family: Arial, Helvetica, sans-serif;
 font-weight:bold;
 color:white;
 font-size: 16px;
@@ -98,7 +100,8 @@ padding: 16px 32px;
     transition: .5s ease;
 }
 .service-card :hover{
-    transform: scale(1.2);
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .fa-google {
     background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
@@ -110,7 +113,7 @@ padding: 16px 32px;
   .modal-header{
     border:0px;
   }
-  .modal-content{
+  .modal-picture{
     background-color: transparent;
   }
 
