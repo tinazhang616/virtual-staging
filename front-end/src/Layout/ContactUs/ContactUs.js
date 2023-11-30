@@ -11,7 +11,7 @@ export default function ContactUs() {
             hello!
           </p>
         </div>
-        <div className="d-flex justify-content-center m-auto">
+        <div className="d-flex flex-wrap justify-content-center m-auto">
           <div className="col-md-6">
             <ContactForm />
           </div>
@@ -42,7 +42,7 @@ export default function ContactUs() {
                 <span className="fa fa-comment-o me-3"></span>Text us:
               </div>
               <a className="link-underline-light" href="sms:(1)(6262179631)">
-                626-217-9621
+                626-217-9631
               </a>
             </div>
           </div>

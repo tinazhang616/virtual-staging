@@ -6,14 +6,12 @@ const ContactForm = () => {
   const { register, handleSubmit, setValue, reset } = useForm();
 
   const onSubmit = async (data) => {
-    // Handle form submission, including file upload
     const formData = new FormData();
     formData.append("name", data.name);
     formData.append("email", data.email);
     formData.append("subject", data.subject);
     formData.append("message", data.message);
     formData.append("file", data.file[0]);
-
     try {
       const response = await axios.post(
         "http://localhost:5001/contact-us",

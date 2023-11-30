@@ -53,20 +53,12 @@ async function fetchJson(url, options, onCancel) {
 export async function listAccount(params, signal) {
   const url = new URL(`${API_BASE_URL}/accounts`);
   url.searchParams.append("email", params.toString());
-  console.log("this is url", url);
   return await fetchJson(url, { headers, signal }, []);
 }
-
-// export async function updatedReservation(params, reservation_id, signal) {
-//   const url = new URL(`${API_BASE_URL}/reservations/${reservation_id}/status`);
-//   const options = {
-//     method: "PUT",
-//     headers,
-//     body: JSON.stringify({ data: params }),
-//     signal,
-//   };
-//   return await fetchJson(url, options, []);
-// }
+export async function listOrders(signal) {
+  const url = new URL(`${API_BASE_URL}/shoppings`);
+  return await fetchJson(url, { headers, signal }, []);
+}
 
 export async function createAccount(params, signal) {
   console.log("I want to see data", params);
@@ -80,7 +72,7 @@ export async function createAccount(params, signal) {
   return await fetchJson(url, options, []);
 }
 
-export async function createShopping(params, signal) {
+export async function createOrder(params, signal) {
   const url = new URL(`${API_BASE_URL}/shopping/`);
   const options = {
     method: "POST",
@@ -91,32 +83,6 @@ export async function createShopping(params, signal) {
   return await fetchJson(url, options, []);
 }
 
-//   export async function listTables(signal) {
-//     const url = new URL(`${API_BASE_URL}/tables`);
-//     return await fetchJson(url, { headers, signal }, [])
-//   }
-
-//   export async function seatReservation(table_id,reservation_id, signal){
-//     const url = new URL(`${API_BASE_URL}/tables/${table_id}/seat`)
-//     const options = {
-//       method: "PUT",
-//       headers,
-//       body: JSON.stringify({data:{reservation_id:reservation_id}}),
-//       signal,
-//     };
-//     return await fetchJson(url, options, []);
-//   }
-
-//   export async function removeAssignedTable(table_id, reservation_id,signal){
-//     const url = new URL(`${API_BASE_URL}/tables/${table_id}/seat`)
-//     const options = {
-//       method: "DELETE",
-//       headers,
-//       body: JSON.stringify({ data: { reservation_id } }),
-//       signal,
-//     };
-//     return await fetchJson(url, options, []);
-//   }
 export async function checkoutCart(order_id, signal) {
   const url = new URL(`${API_BASE_URL}/shopping/${order_id}`);
   const options = {

@@ -1,15 +1,43 @@
 import totalPrice from "../../utils/totalPrice";
 import ReturningCustomer from "./component/ReturningCustomer";
+import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+
 import { useSelector } from "react-redux";
+import { createOrder } from "../../utils/api";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function MakePayment() {
+  const history = useHistory();
   const state = useSelector((state) => state.todos);
   const discount = state.discount;
   const VSDiscount = state.VSDiscount;
+  const [ordered, setOrdered] = useState(false);
   let total = totalPrice(state);
+  const { register, handleSubmit, reset } = useForm();
+  // const [orderDetail, setOrderDetail] = useState({});
+
+  const onSubmit = async (data) => {
+    // create new order of the service to database, also customer information data to database
+    let services = state.service;
+    let orders = {};
+    services.forEach((e) => (orders[e.service] = +e.quantity));
+    const controller = new AbortController();
+    try {
+      await createOrder(orders, controller.signal);
+      reset();
+      setOrdered(true);
+      history.push("/checkout");
+    } catch (error) {
+      console.log(error);
+    }
+
+    return () => controller.abort();
+  };
 
   return (
     <div className="row col-md-8 mx-auto">
+      {ordered && <h1>Thanks for shopping with Virtual Staging Solutions</h1>}
       <div className="row g-5">
         <div>
           <ReturningCustomer />
@@ -25,7 +53,10 @@ export default function MakePayment() {
           <ul className="list-group mb-3">
             {state.service.map((e) => {
               return (
-                <li className="list-group-item d-flex justify-content-between lh-sm">
+                <li
+                  key={e.service}
+                  className="list-group-item d-flex justify-content-between lh-sm"
+                >
                   <div>
                     <h6 class="my-0">
                       {e.service}{" "}
@@ -54,84 +85,49 @@ export default function MakePayment() {
           </ul>
         </div>
         {/* customer and payment detail */}
-        <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Account details</h4>
-          <form class="needs-validation" noV alidate="">
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <label for="firstName" class="form-label">
-                  First name
-                </label>
+        <div className="col-md-7 col-lg-8">
+          <h4 className="mb-3">Account details</h4>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="needs-validation"
+            noV
+            alidate=""
+          >
+            <div className="row g-3">
+              <div className="col-sm-6">
+                <label className="form-label">Name</label>
                 <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  placeholder=""
-                  value=""
+                  className="form-control"
+                  {...register("name")}
                   required
                 />
               </div>
 
-              <div class="col-sm-6">
-                <label for="lastName" class="form-label">
-                  Last name
-                </label>
+              <div className="col-sm-6">
+                <label className="form-label">Email</label>
                 <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  placeholder=""
-                  value=""
-                  required=""
-                />
-              </div>
-              <div className="col-12">
-                <label htmlFor="email" className="form-label">
-                  Email
-                </label>
-                <input
-                  type="email"
                   className="form-control"
-                  id="email"
-                  placeholder="you@example.com"
+                  {...register("email")}
                   required
                 />
               </div>
 
               <div className="col-12">
-                <label htmlFor="company" className="form-label">
-                  Company (optional)
-                </label>
-                <input type="text" className="form-control" id="company" />
+                <label className="form-label">Company (optional)</label>
+                <input className="form-control" {...register("company")} />
               </div>
               <div className="col-md-6">
-                <label htmlFor="phone" className="form-label">
-                  Phone
-                </label>
-                <input
-                  type="number"
-                  className="form-control"
-                  id="phone"
-                  required
-                />
+                <label className="form-label">Phone</label>
+                <input className="form-control" required />
               </div>
               <div className="col-md-6">
-                <label htmlFor="zip" className="form-label">
-                  Zip Code
-                </label>
-                <input
-                  type="number"
-                  className="form-control"
-                  id="zip"
-                  required
-                />
+                <label className="form-label">Zip Code</label>
+                <input className="form-control" />
               </div>
 
               <div class="col-md-6">
-                <label for="country" class="form-label">
-                  Country
-                </label>
-                <select class="form-select" id="country" required="">
+                <label className="form-label">Country</label>
+                <select className="form-select">
                   <option value="">Choose...</option>
                   <option>United States</option>
                 </select>
@@ -157,14 +153,13 @@ export default function MakePayment() {
             <hr class="my-4" />
             <div className="col-12 p-0">
               <h4 className="my-3">Additional information</h4>
-              <label htmlFor="information" className="form-label">
+              <label className="form-label">
                 Invoice Description (optional)
               </label>
               <input
-                type="text"
                 className="form-control"
-                id="information"
                 placeholder="Project name to show on invoice"
+                {...register("invoiceInfo")}
               />
             </div>
 
@@ -275,11 +270,7 @@ export default function MakePayment() {
 
             <hr class="my-4" />
 
-            <button
-              class="w-100 btn btn-primary btn-lg"
-              type="submit"
-              // onSubmit={HandleCheckOut(total, state)}
-            >
+            <button class="w-100 btn btn-primary btn-lg" type="submit">
               Continue to checkout
             </button>
           </form>

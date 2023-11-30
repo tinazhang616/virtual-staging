@@ -6,7 +6,7 @@ import { todoAdded } from "../../../redux/reducers/todosSlice";
 export default function VSPricingPlusCard({ quantity }) {
   const dispatch = useDispatch();
   const itemDetail = {
-    service: "Virtual Staging - Plus",
+    service: "Virtual Staging Plus",
     price: 99,
     quantity,
   };
