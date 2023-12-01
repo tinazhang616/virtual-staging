@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node src/server.js",
     "start:dev": "nodemon src/server.js",
-    "build": "react-scripts build",
     "test": "npx cross-env LOG_LEVEL=warn jest --runInBand --detectOpenHandles --forceExit --config ./test/jest.config.js",
     "test:1": "npm run test -- us-01",
     "test:drop-database": "node test/drop-database",
