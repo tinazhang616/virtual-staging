@@ -5,8 +5,7 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { todoLogin, todoUpdate } from "../../redux/reducers/todosSlice";
 import { useDispatch, useSelector } from "react-redux";
 import GoogleLogin from "react-google-login";
-import FacebookLogin from "react-facebook-login";
-import { handleFaceBookSignUp, handleGoogleSignUp } from "../../utils/SignUp";
+import { handleGoogleSignUp } from "../../utils/SignUp";
 function Account() {
   const state = useSelector((state) => state.todos);
   let accountInfo = state.account;
@@ -154,13 +153,6 @@ function Account() {
                 onSuccess={handleGoogleSignUp}
                 onFailure={handleGoogleSignUp}
                 cookiePolicy={"single_host_origin"}
-              />
-              <FacebookLogin
-                className="btn btn-primary mb-4 w-100"
-                appId="YOUR_FACEBOOK_APP_ID"
-                fields="name,email,picture"
-                callback={handleFaceBookSignUp}
-                icon="fa-facebook"
               />
               <form>
                 <div className="mb-3">
